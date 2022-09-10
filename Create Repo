@@ -1,0 +1,12 @@
+provider "github" {
+  token = "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"
+}
+
+resource "github_repository" "My_Terraform_Repo" {
+  name = "Terraform_Repository"
+  description = "My first Terraform Code.."
+
+  visibility = "public"
+
+  auto_init = true
+}
